@@ -45,7 +45,7 @@ somePromise
 
 ```
 And remember about _this_
-![This meme, credit: Nidhee](some/link/here "The misery of this")
+![This meme, credit: Nidhee](/screenshots/meme.jpeg "The misery of this")
 
 4. require()
 ```
@@ -57,7 +57,7 @@ const myModule3 = require('path/to/file/relative/dir/'); //No need to mention in
 ```
 
 ## Restful API architecture
-![Flowchart](some/link/here "Overall data flow")
+![Flowchart](screenshots/architecture.png "Overall data flow")
 1. Request is received by the server by the server.serve method (http.createServer())
 2. _getRequestParams obtains the whole request object in the required format
 3. We choose a handler from our existing set of handlers as per the url and method
