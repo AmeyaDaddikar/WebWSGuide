@@ -71,7 +71,7 @@ const myModule3 = require('path/to/file/relative/dir/'); //No need to mention in
 2. the handler may make DB/API requests that happen in the background asynchronously. Thus every handler returns a Promise of handling the request
 
 ## HTTP Request parameters:
-1. Method
+### 1. Method
   There are lot of HTTP methods
   a) GET : get data/resource
   b) POST: create new data/resource
@@ -81,7 +81,7 @@ const myModule3 = require('path/to/file/relative/dir/'); //No need to mention in
 
 ##### NOTE: It is possible to interchangebly use these methods, and a lot of APIs actually end up doing that, these are just recommended standards
 
-2. urlpath
+### 2. urlpath
 ```
   www.example.com/urlpath/for/some/task
   urlpath: /urlpath/for/some/task
@@ -90,7 +90,7 @@ const myModule3 = require('path/to/file/relative/dir/'); //No need to mention in
 
 ##### NOTE: / is your root directory, like a starting point for your server
   
-3. QueryParams
+### 3. QueryParams
 ```
   www.example.com/urlpath/for/some/task?param1=val1&param2=val2
   queryParams: {param1: val1, param2 : val2}
@@ -104,6 +104,18 @@ const myModule3 = require('path/to/file/relative/dir/'); //No need to mention in
   ?param1=val1|val2|val3
   ```
   However I found this syntax isn't widely used
+
+### 4. headers
+1. Provide key-value pair information
+2. Usually used for userTokens and authentication
+3. Payload type like application/json can also be mentioned
+4. Many websites use specific Cache Headers to instruct browser how to cache the site
+
+### 5. payload
+Possible payloads
+1. Form data (key-value based)
+2. File uploads (raw data)
+3. Structured data like JSON, XML
 
 ## Recommended project structure
 
